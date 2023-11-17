@@ -192,6 +192,7 @@ scaling_3d/fsr_sharpness=1.0
 
 [xr]
 
+openxr/enabled=true
 openxr/startup_alert=false
 shaders/enabled=true
 openxr/foveation_level=0
