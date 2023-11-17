@@ -52,7 +52,8 @@ var _current_refresh_rate : float = 0
 # Handle auto-initialization when ready
 func _ready() -> void:
 	if !Engine.is_editor_hint() and auto_initialize:
-		initialize()
+		if initialize():
+			LocalGlobals.vr_supported = true
 
 
 ## Initialize the XR interface

@@ -3,7 +3,7 @@ extends Node
 var editor_refs : Dictionary = {}
 var interface : XRInterface
 var webxr_interface
-var vr_supported = true
+var vr_supported := false
 
 var local_uis:Array = []
 
@@ -28,7 +28,6 @@ signal clear_gizmos
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	vr_supported = ProjectSettings.get_setting('xr/openxr/enabled', false)
 	get_viewport().gui_focus_changed.connect(func(node):
 		print(node))
 	Vector.user_logged_in.connect(func() -> void:
