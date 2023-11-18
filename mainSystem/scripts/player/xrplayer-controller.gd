@@ -253,3 +253,6 @@ func flat_movement():
 		if touchsticklook:
 			rotate_y( -(lookdrag.position.x-lookdrag.startposition.x)*(MOUSE_SPEED/800) )
 			xr_camera_3d.rotate_x( -(lookdrag.position.y-lookdrag.startposition.y)*(MOUSE_SPEED/800) )
+
+func _process(_delta: float) -> void:
+	$test_rig/LogicContainer/RenIK.update_ik()

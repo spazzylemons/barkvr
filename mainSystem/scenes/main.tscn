@@ -97,5 +97,6 @@ transparent = false
 [node name="Mirror" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -5)
 script = ExtResource("12_61afi")
+ResolutionPerUnit = 200
 
 [connection signal="pressed" from="StartXR/EnterWebXR/EnterVRButton" to="StartXR" method="_on_enter_webxr_button_pressed" flags=18]
